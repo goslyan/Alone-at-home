@@ -1,0 +1,56 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1600px;
+  width: 100%;
+  margin: auto;
+}
+
+.header {
+  margin: 0;
+}
+.header_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_nav-menu_item {
+  font-size: 20px;
+  padding: 40px 80px;
+  color: black;
+}
+.header_nav-menu_item:hover {
+  background-color: rgba(216, 216, 216, 0.2);
+}
+
+.hero_bg {
+  background: url(../img/home/Rolling-Homes-9.jpg) no-repeat center/cover;
+  padding: 200px 0;
+}
+.hero_block {
+  background: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  border-radius: 50px;
+}
+.hero_title {
+  font-size: 70px;
+  color: black;
+}
+.hero_about {
+  font-size: 25px;
+  padding-top: 30px;
+  color: #000;
+}
+.hero_slogan {
+  font-size: 25px;
+  padding-top: 10px;
+  color: #000;
+}/*# sourceMappingURL=style.css.map */
