@@ -1,7 +1,8 @@
 *, *:before, *:after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a {
@@ -15,18 +16,32 @@ a {
 }
 
 .header {
+  background-color: #97846a;
   margin: 0;
 }
-.header_block {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+.header_logo:hover {
+  background-color: rgba(216, 216, 216, 0.2);
 }
+
+.header_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .header_nav-menu_item {
   font-size: 20px;
   padding: 40px 80px;
-  color: black;
+  color: white;
 }
+
 .header_nav-menu_item:hover {
   background-color: rgba(216, 216, 216, 0.2);
 }
@@ -35,22 +50,54 @@ a {
   background: url(../img/home/Rolling-Homes-9.jpg) no-repeat center/cover;
   padding: 200px 0;
 }
+
 .hero_block {
   background: rgba(255, 255, 255, 0.5);
   text-align: center;
   border-radius: 50px;
 }
+
 .hero_title {
   font-size: 70px;
-  color: black;
+  color: #000000;
 }
+
 .hero_about {
   font-size: 25px;
   padding-top: 30px;
-  color: #000;
+  color: #000000;
 }
+
 .hero_slogan {
   font-size: 25px;
-  padding-top: 10px;
-  color: #000;
-}/*# sourceMappingURL=style.css.map */
+  font-style: italic;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #000000;
+}
+
+.reviews {
+  margin-top: 100px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.reviews_title {
+  font-size: 35px;
+  text-align: center;
+}
+
+.reviews-people {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reviews-people_title {
+  font-size: 25px;
+  text-align: center;
+}
+
+.reviews-people_review {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
