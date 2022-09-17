@@ -1,8 +1,12 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
 *, *:before, *:after {
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
@@ -19,55 +23,41 @@ a {
   background-color: #97846a;
   margin: 0;
 }
-
 .header_logo:hover {
   background-color: rgba(216, 216, 216, 0.2);
 }
-
 .header_block {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .header_nav-menu_item {
   font-size: 20px;
   padding: 40px 80px;
   color: white;
 }
-
 .header_nav-menu_item:hover {
   background-color: rgba(216, 216, 216, 0.2);
 }
 
 .hero_bg {
-  background: url(../img/home/Rolling-Homes-9.jpg) no-repeat center/cover;
-  padding: 200px 0;
+  background: linear-gradient(rgba(151, 132, 106, 0.7), rgba(117, 117, 117, 0.7)), url(../img/home/Rolling-Homes-9.jpg) no-repeat center/cover;
+  padding: 120px 0;
 }
-
 .hero_block {
   background: rgba(255, 255, 255, 0.5);
   text-align: center;
   border-radius: 50px;
 }
-
 .hero_title {
   font-size: 70px;
   color: #000000;
 }
-
 .hero_about {
   font-size: 25px;
   padding-top: 30px;
   color: #000000;
 }
-
 .hero_slogan {
   font-size: 25px;
   font-style: italic;
@@ -79,25 +69,230 @@ a {
 .reviews {
   margin-top: 100px;
   background: rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  padding-bottom: 50px;
+  padding-top: 30px;
 }
-
 .reviews_title {
-  font-size: 35px;
+  font-size: 40px;
   text-align: center;
 }
-
 .reviews-people {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
 }
-
-.reviews-people_title {
+.reviews-people-card {
+  background: rgba(143, 138, 138, 0.6705882353);
+  width: 25%;
+  border-radius: 50px;
+}
+.reviews-people-card::first-child {
+  width: 25%;
+}
+.reviews-people-card_title {
   font-size: 25px;
   text-align: center;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+.reviews-people-card_review {
+  text-align: center;
+  margin-top: 20px;
+}
+.reviews-people-card_img {
+  width: 50px;
+  margin-left: 175px;
+  border-radius: 50%;
 }
 
-.reviews-people_review {
+.graph {
+  background: linear-gradient(rgba(117, 117, 117, 0.7), rgba(0, 0, 0, 0.8));
+  padding: 50px 0;
+}
+.graph_title {
+  margin-bottom: 50px;
+  color: white;
+}
+.graph-ol {
+  counter-reset: li;
+  list-style: none;
+  font-size: 20px;
+  padding: 0;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+.graph-ol_item {
+  position: relative;
+  display: block;
+  padding: 5px 5px 5px 50px;
+  width: 42%;
+  margin: 50px 0;
+  background: #DAD2CA;
+  color: #444;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: 0.3s ease-out;
+}
+.graph-ol_item::before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  margin-top: -25px;
+  background: #97846a;
+  height: 50px;
+  width: 50px;
+  line-height: 35px;
+  border: 0.3em solid white;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 2em;
+  transition: all 0.3s ease-out;
+}
+.graph-ol_item:hover::before {
+  transform: rotate(360deg) scale(1.2);
+}
+
+.search {
+  padding: 100px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(117, 117, 117, 0.8)), url(../img/promotions/promotion2.jpg) no-repeat center/cover;
+}
+.search_input {
+  width: 30%;
+  margin: 0 auto;
+  display: block;
+}
+.search_title {
+  font-size: 30px;
+  text-align: center;
+  margin: 50px 0;
+  color: white;
+}
+
+input, select {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  outline: 0;
+}
+
+.form_label {
+  font-size: 20px;
+  color: white;
+}
+.form_select, .form_date-in, .form_date-out, .form_number {
+  margin: 30px 0;
+}
+.form_button {
+  margin-top: 20px;
+  padding: 15px 0;
+  width: 100%;
+  background-color: rgba(151, 132, 106, 0.8);
+  border: none;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.form_button_link {
+  color: black;
+  font-size: 20px;
+}
+.form_button:hover {
+  background-color: rgba(143, 138, 138, 0.8);
+}
+
+.promotions {
+  background: rgba(117, 117, 117, 0.7);
+  padding: 150px 0;
+}
+.promotions_block {
+  display: flex;
+  justify-content: space-around;
+}
+.promotions_card {
+  width: 400px;
+  background: #525252;
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
   text-align: center;
 }
-/*# sourceMappingURL=style.css.map */
+.promotions_card_text {
+  width: 400px;
+  padding: 30px 0;
+}
+.promotions_card_button {
+  padding: 10px;
+  background-color: #97846a;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+img {
+  border-radius: 15px 15px 0 0;
+}
+
+.close {
+  background: linear-gradient(rgba(117, 117, 117, 0.7), rgba(151, 132, 106, 0.7));
+  padding: 200px 0;
+  text-align: center;
+}
+.close_title {
+  margin-bottom: 100px;
+}
+.close_block_input {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  max-width: 1000px;
+  margin-left: 300px;
+}
+.close_block_email {
+  max-width: 300px;
+}
+.close_block_subscribe {
+  max-width: 300px;
+  padding: 15px 0;
+  width: 100%;
+  font-size: 14px;
+  background-color: rgba(151, 132, 106, 0.8);
+  border: none;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.close_block_subscribe:hover {
+  background-color: rgba(143, 138, 138, 0.8);
+}
+
+.footer {
+  background: #97846a;
+  padding: 10px 0;
+}
+.footer_nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_nav-menu_phone {
+  margin-bottom: 10px;
+}
+.footer_nav-menu_item {
+  margin-right: 30px;
+  color: white;
+}
+.footer_nav-menu_item:hover {
+  color: #525252;
+}
+
+.phone {
+  color: white;
+}
+.phone:hover {
+  color: #525252;
+}/*# sourceMappingURL=style.css.map */

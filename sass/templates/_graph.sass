@@ -1,0 +1,42 @@
+.graph
+    background: linear-gradient(rgba(117, 117, 117, 0.7), rgba(0, 0, 0, 0.8))
+    padding: 50px 0
+    &_title
+        margin-bottom: 50px
+        color: white
+    &-ol
+        counter-reset: li
+        list-style: none
+        font-size: 20px
+        padding: 0
+        text-shadow: 0 1px 0 rgba(255,255,255,.5)
+        &_item
+            position: relative
+            display: block
+            padding: 5px 5px 5px 50px
+            width: 42%
+            margin: 50px 0
+            background: #DAD2CA
+            color: #444
+            text-decoration: none
+            border-radius: 20px
+            transition: .3s ease-out
+            &::before
+                content: counter(li)
+                counter-increment: li
+                position: absolute
+                left: -20px
+                top: 50%
+                margin-top: -25px
+                background: $lightbrown
+                height: 50px
+                width: 50px
+                line-height: 35px
+                border: .3em solid white
+                text-align: center
+                font-weight: bold
+                border-radius: 2em
+                transition: all .3s ease-out
+            &:hover::before
+                transform: rotate(360deg) scale(1.2)
+                

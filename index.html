@@ -11,7 +11,7 @@
     <header class="header header_section">
         <div class="container">
             <div class="header_block">
-                <a href="#" class="header_logo"><img src="img/logo.png" alt="logo" width="150" height="100"></a>
+                <a href="#" class="header_logo"><img src="img/logo.png" alt="logo" width="100"></a>
                 <div class="header_nav-menu">
                     <a href="#" class="header_nav-menu_item">Акции</a>
                     <a href="#" class="header_nav-menu_item">Поиск</a>
@@ -33,18 +33,20 @@
                         <h2 class="reviews_title">Отзывы клиентов</h2>
                         <div class="reviews_block">
                             <div class="reviews-people">
-                                <div class="reviews-people_igor">
-                                    <h3 class="reviews-people_title">Игорь</h3>
-                                    <p class="reviews-people_review">Спасибо большое! Изоляция прошла с пользой! Побольше бы таких проектов!<br>Успехов вам!</p>
+                                <div class="reviews-people-card">
+                                    <h3 class="reviews-people-card_title">Игорь</h3>
+                                    <img class="reviews-people-card_img" src="img/chel.jpg" alt="man">
+                                    <p class="reviews-people-card_review">Спасибо большое! Изоляция прошла с пользой! Побольше бы таких проектов!<br>Успехов вам!</p>
                                 </div>
-                                <div class="reviews-people_elena">
-                                    <h3 class="reviews-people_title">Елена</h3>
-                                    <p class="reviews-people_review">Понравилось оформление домов-бочек и спектр услуг! Для семьи из 4-х человек все условия, особенно хотелось отметить качество медицинских услуг!<br>Однозначно рекомендую!</p>
+                                <div class="reviews-people-card">
+                                    <h3 class="reviews-people-card_title">Елена</h3>
+                                    <img class="reviews-people-card_img" src="img/chel.jpg" alt="woman">
+                                    <p class="reviews-people-card_review">Понравилось оформление домов-бочек и спектр услуг! Для семьи из 4-х человек все условия, особенно хотелось отметить качество медицинских услуг!<br>Однозначно рекомендую!</p>
                                 </div>
-                                <div class="reviews-people_oleg">
-                                    <h3 class="reviews-people_title">Олег</h3>
-                                    <img src="img/home/9a6e71243eb6a95c95d275a7a75b06aa.jpg" alt="oleg" width="300" height="200">
-                                    <p class="reviews-people_review">Решил совместить приятное с полезным. Отметили в изоляции очередную годовщину с супругой, качество услуг отличное и главное вокруг никого)))<br>Рекомендую!</p>
+                                <div class="reviews-people-card">
+                                    <h3 class="reviews-people-card_title">Олег</h3>
+                                    <img class="reviews-people-card_img" src="img/chel.jpg" alt="man">
+                                    <p class="reviews-people-card_review">Решил совместить приятное с полезным. Отметили в изоляции очередную годовщину с супругой, качество услуг отличное и главное вокруг никого)))<br>Рекомендую!</p>
                                 </div>
                             </div>
                         </div>
@@ -52,6 +54,109 @@
                 </div>
             </div>
         </section>
+        <section class="graph">
+            <div class="container">
+                <div class="graph_block">
+                    <h1 class="graph_title">Чтобы воспользоваться услугами компании необходимо:</h1>
+                    <ol class="graph-ol">
+                        <li><a href="#" class="graph-ol_item">Выбрать даты и место самоизоляции</a></li>
+                        <li><a href="#" class="graph-ol_item">Выбрать количество проживающих</a></li>
+                        <li><a href="#" class="graph-ol_item">Выбрать желаемый кемпинг, соответствующий условиям выше</a></li>
+                        <li><a href="#" class="graph-ol_item">Выбрать понравившийся дом-бочку на территории кемпинга</a></li>
+                        <li><a href="#" class="graph-ol_item">Определить перечень дополнительных услуг</a></li>
+                        <li><a href="#" class="graph-ol_item">Оформить заказ</a></li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <section class="search">
+            <div class="container">
+                <div class="search_input">
+                    <h1 class="search_title">Форма поиска</h1>
+                    <form class="form" action="#" method="get">
+                        <div class="form_row_select">
+                            <label for="region" class="form_label">Выберите регион</label>
+                            <select name="select" id="region" class="form_select" size="1">
+                                <option value="s1" class="form_select_item">Омская область</option>
+                                <option value="s2" class="form_select_item">Красноярский край</option>
+                                <option value="s3" class="form_select_item">Алтайский край</option>
+                            </select>
+                        </div>
+                        <div class="form_row">
+                            <label for="date-in" class="form_label">Дата заселение</label>
+                            <input class="form_date-in" type="date" name="date" id="date-in">
+                        </div>
+                        <div class="form_row">
+                            <label for="date-out" class="form_label">Дата выселения</label>
+                            <input class="form_date-out" type="date" name="date" id="date-out">
+                        </div>
+                        <div class="form_row">
+                            <label for="count" class="form_label">Количество человек</label>
+                            <input class="form_number" type="number" name="people" id="count" value="1" min="1" max="5" step="1">
+                        </div>
+                        <div class="form_row">
+                            <button class="form_button"type="submit"><a class="form_button_link" href="#">Поиск</a></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="promotions">
+            <div class="promotions_block">
+                <div class="promotions_card">
+                    <div class="promotions_card">
+                        <img src="img/promotions/promotion3.jpg" alt="3" height="200" width="400">
+                        <p class="promotions_card_text">Устали от городского шума, хотите провести время вынужденной изоляции на свежем воздухе и отрешиться от повседневных хлопот?</p>
+                        <button class="promotions_card_button">Перейти -></button>
+                    </div>
+                </div>
+                <div class="promotions_card">
+                    <div class="promotions_card">
+                        <img src="img/promotions/promotion4.jpg" alt="4" height="200" width="400">
+                        <p class="promotions_card_text">Кемпинг «Лесная поляна» расположен в живописной загородной местности на берегу чистого озера. В этом месте можно провести время самоизоляции в стороне от городской суеты с пользой для здоровья.</p>
+                        <button class="promotions_card_button">Перейти -></button>
+                    </div>
+                </div>
+                <div class="promotions_card">
+                    <img src="img/promotions/promotion1.jpg" alt="1" height="200" width="400">
+                    <p class="promotions_card_text">Уютные небольшие домики-бочки для желающих провести самоизоляцию отдыха вдвоем.</p>
+                    <button class="promotions_card_button">Перейти -></button>
+                </div>
+            </div>
+        </section>
+        <section class="close">
+            <div class="container">
+                <div class="close_block">
+                    <div class="close_block_title">
+                        <h2 class="close_block_title_text">Форма для подписки на закрытые акции</h2>
+                    </div>
+                    <div class="close_block_input">
+                        <input class="close_block_email" value="Ваш Email" type="email" name="mail" id="email">
+                        <input class="close_block_subscribe" type="submit" value="Подписаться">
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_nav-menu">
+                <div class="footer_nav-menu_phone">
+                    <a class="phone" href="tel:+7 (800) 100-10-10">8 (800) 100-10-10</a>
+                </div>
+                <div class="footer_nav-menu1">
+                    <a href="#" class="footer_nav-menu_item">Домой</a>
+                    <a href="#" class="footer_nav-menu_item">Логин</a>
+                    <a href="#" class="footer_nav-menu_item">Регистрация</a>
+                    <a href="#" class="footer_nav-menu_item">Контакты</a>
+                    <a href="#" class="footer_nav-menu_item">Новости</a>
+                </div>
+            </div>
+            <div class="footer_nav-menu2">
+                <a href="#" class="footer_nav-menu_item">Возврат</a>
+                <a href="#" class="footer_nav-menu_item">Обратная связь</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
