@@ -4,9 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/style.css">
     <title>search</title>
 </head>
 <body>
-    
+    <header class="header header_section">
+        <div class="container">
+            <div class="header_block">
+                <a href="./index.html" class="header_logo"><img src="img/logo.png" alt="logo" width="100"></a>
+                <div class="header_nav-menu">
+                    <a href="./index.html#promotions" class="header_nav-menu_item">Акции</a>
+                    <a href="./index.html#search" class="header_nav-menu_item">Поиск</a>
+                    <a href="./index.html#" class="header_nav-menu_item">Управление бронированием</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="search">
+            <div class="container">
+                <div class="search_input">
+                    <h1 class="search_title">Поиск дома<br>заполните форму</h1>
+                    <form class="form" action="#" method="get">
+                        <div class="form_row_select">
+                            <label for="region" class="form_label">Выберите регион</label>
+                            <select name="select" id="region" class="form_select" size="1">
+                                <option value="s1" class="form_select_item">Омская область</option>
+                                <option value="s2" class="form_select_item">Красноярский край</option>
+                                <option value="s3" class="form_select_item">Алтайский край</option>
+                            </select>
+                        </div>
+                        <div class="form_row">
+                            <label for="date-in" class="form_label">Дата заселение</label>
+                            <input class="form_date-in" type="date" name="date" id="date-in">
+                        </div>
+                        <div class="form_row">
+                            <label for="date-out" class="form_label">Дата выселения</label>
+                            <input class="form_date-out" type="date" name="date" id="date-out">
+                        </div>
+                        <div class="form_row">
+                            <label for="count" class="form_label">Количество свободных домов-бочек в этом регионе</label>
+                            <input class="form_number" type="number" name="people" id="count" readonly>
+                        </div>
+                        <div class="form_row">
+                            <button class="form_button"type="submit"><a class="form_button_link" href="./seat.html">Переход к выбору дома</a></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_nav-menu">
+                <div class="footer_nav-menu_phone">
+                    <a class="phone" href="tel:+7 (800) 100-10-10">8 (800) 100-10-10</a>
+                </div>
+                <div class="footer_nav-menu1">
+                    <a href="http://xxxxxx-m1.wsr.ru" class="footer_nav-menu_item">Домой</a>
+                    <a href="http://xxxxxx-m1.wsr.ru/login" class="footer_nav-menu_item">Логин</a>
+                    <a href="http://xxxxxx-m1.wsr.ru/signup" class="footer_nav-menu_item">Регистрация</a>
+                    <a href="http://xxxxxx-m1.wsr.ru/contact" class="footer_nav-menu_item">Контакты</a>
+                    <a href="http://xxxxxx-m1.wsr.ru/news" class="footer_nav-menu_item">Новости</a>
+                </div>
+            </div>
+            <div class="footer_nav-menu2">
+                <a href="http://xxxxxx-m1.wsr.ru/return" class="footer_nav-menu_item">Возврат</a>
+                <a href="http://xxxxxx-m1.wsr.ru/feedback" class="footer_nav-menu_item">Обратная связь</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
